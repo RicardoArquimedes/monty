@@ -28,12 +28,12 @@ void script_monty(FILE *input)
 			{
 				if (argument[0] == '#')
 				{
-					global_line.opcode = "#"; /* safe argument*/
+					global_line.opcode = "#";
 					i--;
 				}
 				else
-					global_line.opcode = argument; /* safe argument*/
-				global_line.number_line = i;	       /*safe number_line */
+					global_line.opcode = argument;
+				global_line.number_line = i;
 			}
 			if (j == 1)
 				global_line.argument = argument;
