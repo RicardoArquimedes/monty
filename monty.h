@@ -78,6 +78,7 @@ void add_funct(stack_t **stack, unsigned int line_number);
 void nop_funct(stack_t **stack, unsigned int line_number);
 void swap_funct(stack_t **stack, unsigned int line_number);
 void sub_funct(stack_t **stack, unsigned int line_number);
+void comment_funct(stack_t **stack, unsigned int line_number);
 void swap_node(stack_t *stack);
 void add_topnode(stack_t **stack);
 void sub_topnode(stack_t **stack);
