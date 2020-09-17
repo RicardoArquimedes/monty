@@ -1,4 +1,3 @@
-
 #include "monty.h"
 /**
  * script_monty - This function split the input file in line  and arguments
