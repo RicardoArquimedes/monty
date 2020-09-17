@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -71,4 +74,5 @@ void pall_funct(stack_t **stack, unsigned int line_number);
 void pint_funct(stack_t **stack, unsigned int line_number);
 void pop_funct(stack_t **stack, unsigned int line_number);
 int _isdigit(void);
+size_t dlistint_len(const stack_t *h);
 #endif
