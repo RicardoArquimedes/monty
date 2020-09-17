@@ -10,21 +10,19 @@ int main(int argc, char *argv[])
 {
 	char *filename = argv[1];
 	FILE *fp = NULL;
-	(void)argc;
-
+	
 	if (argc != 2)
 	{
-		printf("USAGE: monty file\n");
-		return (EXIT_FAILURE);
+		dprintf(STDERR_FILENO, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
 	}
 	fp = fopen(filename, "r");
 	if (fp == NULL)
 	{
-		printf("Error: Can't open file %s", filename);
-		return (1);
-		return (EXIT_FAILURE);
+		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", filename);
+		exit(EXIT_FAILURE);
 	}
 
 	script_monty(fp);
-	return (0);
+	exit(EXIT_SUCCESS);
 }
