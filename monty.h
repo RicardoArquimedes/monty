@@ -62,10 +62,13 @@ void print_dlistint(const stack_t *h);
 void  print_head(const stack_t *h);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
+void delete_dnodeint_at_index(stack_t **head, unsigned int index);
 void script_monty(FILE *input);
 void validate_opcode(void);
 void (*get_funct(char *opcode))(stack_t **stack, unsigned int line_number);
 void push_funct(stack_t **stack, unsigned int line_number);
 void pall_funct(stack_t **stack, unsigned int line_number);
 void pint_funct(stack_t **stack, unsigned int line_number);
+void pop_funct(stack_t **stack, unsigned int line_number);
+int _isdigit(void);
 #endif

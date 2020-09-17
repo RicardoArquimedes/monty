@@ -48,3 +48,20 @@ void script_monty(FILE *input)
 	}
 	free_dlistint(head), fclose(input);
 }
+
+int _isdigit(void)
+{
+
+	int i;
+
+	i = 0;
+	if (global_line.argument[0] == '-')
+		i++;
+	while (global_line.argument[i])
+	{
+		if (!isdigit(global_line.argument[i]))
+			return (0);
+		i++;
+	}
+	return (1);
+}
