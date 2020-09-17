@@ -49,6 +49,10 @@ void script_monty(FILE *input)
 	free_dlistint(head), fclose(input);
 }
 
+/**
+ * _isdigit - Checked if a character is a digit character
+ * Return: c if c is a digit (1) otherwise
+*/
 int _isdigit(void)
 {
 

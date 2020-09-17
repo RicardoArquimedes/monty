@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * fn_pop - call the function to delete node at beginning (top stack)
+ * pop_funct - call the function to delete node at beginning (top stack)
  * @stack: pointer to head of stack
  * @line_number: number of the line in the bytecode file
  * Return: number of nodes in the linked list, 0 if empty
