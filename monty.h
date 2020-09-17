@@ -73,6 +73,8 @@ void push_funct(stack_t **stack, unsigned int line_number);
 void pall_funct(stack_t **stack, unsigned int line_number);
 void pint_funct(stack_t **stack, unsigned int line_number);
 void pop_funct(stack_t **stack, unsigned int line_number);
+void swap_funct(stack_t **stack, unsigned int line_number);
+void swap_node(stack_t *stack);
 int _isdigit(void);
 size_t dlistint_len(const stack_t *h);
 #endif
