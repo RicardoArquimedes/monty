@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	char *filename = argv[1];
 	FILE *fp = NULL;
-	
+
 	if (argc != 2)
 	{
 		dprintf(STDERR_FILENO, "USAGE: monty file\n");
