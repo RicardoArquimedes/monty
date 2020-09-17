@@ -9,7 +9,7 @@ void push_funct(stack_t **stack, unsigned int number_line)
 {
 	(void)number_line;
 
-	if (global_line.argument != NULL)
+	if (line_global.argument != NULL && _isdigit() != 0)
 	{
 		add_dnodeint(stack, atoi(global_line.argument));
 		return;
@@ -18,3 +18,4 @@ void push_funct(stack_t **stack, unsigned int number_line)
 		global_line.number_line);
 	exit(EXIT_FAILURE);
 }
+
