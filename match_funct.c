@@ -15,6 +15,7 @@ void (*get_funct(char *opcode))(stack_t **stack, unsigned int number_line)
 		{"pop",  pop_funct},
 		{"swap", swap_funct},
 		{"add", add_funct},
+		{"nop", nop_funct},
 		{NULL, NULL}
 	};
 	int i = 0, line = 0;
