@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _GNU_SOURCE
 #define CHARMAX 1000
 #include <unistd.h>
 #include <stdio.h>
