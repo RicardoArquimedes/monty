@@ -16,6 +16,12 @@ void swap_node(stack_t *stack)
 	(tmp->next)->n = data;
 }
 
+/**
+ * add_topnode - add nodes at top
+* @stack: Pointed to head of a list
+ *
+* Return: void
+ */
 void add_topnode(stack_t **stack)
 {
 	stack_t *tmp = *stack;
