@@ -80,12 +80,13 @@ void swap_funct(stack_t **stack, unsigned int line_number);
 void sub_funct(stack_t **stack, unsigned int line_number);
 void mul_funct(stack_t **stack, unsigned int line_number);
 void div_funct(stack_t **stack, unsigned int line_number);
+void mod_funct(stack_t **stack, unsigned int line_number);
 void comment_funct(stack_t **stack, unsigned int line_number);
 void swap_node(stack_t *stack);
 void add_topnode(stack_t **stack);
 void sub_topnode(stack_t **stack);
 void mul_topnode(stack_t **stack);
-
+void mod_topnode(stack_t **stack);
 void div_topnode(stack_t **stack);
 int _isdigit(void);
 size_t dlistint_len(const stack_t *h);
