@@ -21,7 +21,10 @@ void (*get_funct(char *opcode))(stack_t **stack, unsigned int number_line)
 		{"div", div_funct},
 		{"mod", mod_funct},
 		{"#", comment_funct},
+		{"pchar", pchar_funct},
+
 		{NULL, NULL}
+
 	};
 	int i = 0, line = 0;
 	char *code = NULL;
