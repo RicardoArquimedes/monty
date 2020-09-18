@@ -18,6 +18,7 @@ void (*get_funct(char *opcode))(stack_t **stack, unsigned int number_line)
 		{"nop", nop_funct},
 		{"sub", sub_funct},
 		{"mul", mul_funct},
+		{"div", div_funct},
 		{"#", comment_funct},
 		{NULL, NULL}
 	};
